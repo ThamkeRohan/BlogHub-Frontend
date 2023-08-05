@@ -1,0 +1,28 @@
+.tag{
+   cursor: pointer;
+   font-size: var(--tag-font);
+   background-color: var(--pure-white);
+   color: var(--dark-navy-blue);
+   font-weight: bold;
+   border-radius: 5px;
+   border: 1px solid var(--dark-navy-blue);
+   display: flex;
+   align-items: center;
+}
+.tag .tag-name{
+    width: 80%;
+    padding: 0.3rem 1rem;
+    white-space: nowrap;
+}
+.tag .tag-count{
+    width: 20%;
+    text-align: center;
+    background-color: var(--dark-navy-blue);
+    padding: 0.3rem 1rem;
+    color: var(--pure-white);
+}
+
+.selected-tag{
+    color: var(--pure-white);
+    background-color: var(--pure-blue);
+}

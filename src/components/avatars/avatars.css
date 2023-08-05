@@ -1,0 +1,15 @@
+.avatars{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 70px);
+    grid-gap: 10px;
+}
+.avatars .active-avatar{
+    border: 3px solid var(--pure-black);
+    padding: 3px;
+    width: 65px;
+}
+.avatars img{
+    width: 70px;
+    border-radius: 50px;
+    cursor: pointer;
+}

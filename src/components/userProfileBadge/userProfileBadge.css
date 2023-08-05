@@ -1,0 +1,18 @@
+.user-profile-badge{
+    display: flex;
+    align-items: center;
+    background-color: var(--off-gray);
+    border-radius: 35px;
+    padding: 10px;
+    gap: 0.5rem;
+    
+}
+.user-profile-badge .avatar{
+    width: 50px;
+    border-radius: 25px;
+
+}
+.user-profile-badge .name{
+    font-size: var(--user-profile-badge-font);
+    color: var(--pure-white);
+}

@@ -1,0 +1,7 @@
+.profile{
+    padding: 2rem;
+}
+.profile .sub-heading{
+    font-size: var(--sub-heading-font);
+    margin: 1rem 0;
+}

@@ -1,0 +1,115 @@
+.blog-form{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    margin: 2rem 3rem;
+}
+.blog-form .errors{
+    font-size: var(--error-font);
+    color: var(--pure-crimson);   
+}
+.blog-form .markdown-error{
+    position: absolute;
+    bottom: calc(-1 * var(--error-font));
+}
+.blog-form .header-img-container{
+    width: 100%;
+    height: 400px;
+}
+.header-img-container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.blog-form label{
+    display: block;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: var(--gray);
+}
+.blog-form > div{
+    width: 100%;
+}
+.blog-form .tags-container input{
+    width: calc(100% - 9rem);
+    margin-right: 1rem;
+
+}
+.blog-form input{
+    font-size: 1.3rem;
+    padding: 0.3rem;
+    width: 100%;
+}
+.blog-form .form-tags-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+.blog-form .form-tags-list .tag{
+    color: var(--dark-navy-blue);
+    background-color: var(--pure-white);
+    border: 1px solid var(--dark-navy-blue);
+    font-weight: bold;
+    display: flex;
+    padding: 0.2rem 0.3rem;
+    gap: 0.2rem;
+}
+.blog-form .form-tags-list .tag .remove-tag-btn{
+    background: none;
+    border: none;
+    color: var(--pure-crimson);
+    font-weight: bold;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+.blog-form .markdown-parser-container{
+    display: flex;
+    gap: 1.5rem;
+    position: relative;
+}
+.blog-form .markdown-container, .blog-form .preview-container{
+    flex-basis: 0;
+    flex-grow: 1;
+    font-size: 1.3rem;
+    
+}
+.blog-form .blog-markdown, .blog-form .blog-preview{
+    border: 1px solid var(--pure-black);
+    border-radius: 5px;
+    height: 400px;
+    padding: 1rem;
+    overflow: auto;
+    background-color: var(--pure-white);
+}
+.blog-form .blog-markdown{
+    resize: none;
+    width: 100%;
+    font-size: 1.3rem; 
+    font-family: Quickstand;
+}
+.blog-form .blog-html img{
+    display: block;
+    width: calc(100% - 60px);
+    height: 200px;
+    margin: auto;
+    object-fit: cover;
+}
+.blog-form .btns-container{
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+}
+
+
+
+@media (max-width: 700px) {
+    .markdown-parser-container{
+        flex-direction: column;
+    }
+    .blog-form .header-img-container{
+        height: 300px;
+    }
+}

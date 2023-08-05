@@ -1,38 +1,98 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Lumanosimo&family=Poppins:wght@300&family=Quicksand&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+:root{
+    --dark-navy-blue: rgb(2, 2, 58);
+    --transparent-navy-blue:  rgba(154, 154, 238, 0.596); 
+    --dark-gold: darkgoldenrod;
+    --pure-white: white;
+    --pure-black: black;
+    --off-gray: rgb(141, 140, 140);
+    --pure-gray: gray;
+    --pure-blue: rgb(25, 25, 138);
+    --light-blue: rgb(74, 180, 230);
+    --grayish-dark-blue:rgb(23, 23, 65);
+    --pure-crimson:crimson;
+    --pure-green:green;
+    --light-green: rgb(61, 235, 61);
+    --dark-green: rgb(8, 61, 8);
+    --transparent-green:rgba(122, 216, 122, 0.432);
+    --off-white:whitesmoke;
+    --pure-orange: rgb(255, 182, 46);
+    --pure-violet: rgb(241, 141, 241);
+
+    --app-title-font: 2rem;
+    --login-form-title-font: 3rem;
+    --label-font: 1.3rem;
+    --input-font: 1.5rem;
+    --tag-font: 1.1rem;
+    --action-btn-font: 1.6rem;
+    --user-profile-badge-font: 1.3rem;
+    --action-btn-font: 1.6rem;
+    --navigation-btn-font: 1.8rem;
+    --user-profile-card-font: 1.5rem;
+    --sub-heading-font: 2rem;
+    --blog-card-title-font: 1.3rem;
+    --blog-card-tag-font: 1.2rem;
+    --blog-card-markdown-font: 1.15rem;
+    --read-more-btn-font: 1.2rem;
+    --error-font: 1.1rem;
+    --server-error-font: 1.5rem;
+    --show-page-tag-font: 1.2rem;
+    --show-page-html-font: 1.2rem;
+    --show-page-extra-info-font: 1.1rem;
+
+}
+body{
+    font-family: Quicksand;  
+    background-color: var(--off-white);
+}
+.action-btn, .navigation-btn{
+    padding: 0.3rem 0.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.action-btn{
+    font-size: var(--action-btn-font);
+    color: var(--pure-white);
+    width: 8rem;
+    padding: 0.5rem 0.5rem;
+    background-image: linear-gradient(to top right, var(--pure-blue), var(--light-green));
+    border: none;
+    white-space: nowrap;
+}
+.navigation-btn{
+    font-size: var(--navigation-btn-font);
+    background-image: linear-gradient(to bottom, var(--light-blue), var(--pure-blue)) ;
+    color: var(--pure-white);
+    width: 8rem;
+    border: none;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@media (max-width: 650px){
+    :root{
+        --app-title-font: 1.5rem;
+        --action-btn-font:1.3rem;
+        --navigation-btn-font: 1.4rem;
+        --user-profile-badge-font: 1.1rem;
+        --user-profile-card-font: 1.3rem;
+        --tag-font: 1rem;
+        --blog-card-title-font: 1.2rem;
+        --blog-card-tag-font: 1.1rem;
+        --blog-card-markdown-font: 1.1rem;
+        --read-more-btn-font: 1.1rem;
+        --show-page-title-font: 1.2rem;
+        --show-page-tag-font: 1.1rem;
+        --show-page-html-font: 1.1rem;
+        --show-page-extra-info-font: 1.1rem;
+        
+    }
+    .navigation-btn{
+        width: 6rem;
+    }
 }

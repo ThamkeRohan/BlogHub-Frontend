@@ -1,0 +1,62 @@
+.sign-up-container{
+    max-width: 850px;
+    min-width: 300px;
+    margin: 0 auto 5rem auto;
+    border-radius: 5px;
+    background-image: linear-gradient(to bottom,var(--pure-violet), var(--light-blue));
+
+}
+
+.sign-up-container .selected-avatar{
+    width: 200px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.sign-up-container h1{
+    text-align: center;
+    margin: 1rem;
+    font-size: var(--login-form-title-font);
+    
+}
+.sign-up-form{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 10px;
+}
+.sign-up-form > div{
+    width: 100%;
+}
+.sign-up-form label{
+    display: block;
+    font-size: var(--label-font);
+    margin-bottom: 0.2rem;
+}
+.sign-up-form input{
+    font-size: var(--input-font);
+    padding: 0.2rem 0.4rem;
+    border-radius: 2px;
+    width: 100%;
+}
+.sign-up-form button{
+    font-size: var(--action-btn-font);
+    padding: 0.2rem 0.4rem;
+    border-radius: 5px;
+    align-self: center;
+    margin-top: 1rem
+}
+.sign-up-form .error{
+    color: var(--pure-crimson);
+    font-size: var(--error-font);
+    text-align: center;
+    background-color: var(--off-white);
+    margin: 0.25rem;
+    padding: 0.2rem;
+    border-radius: 5px;
+}
+.sign-up-form div.server-error{
+    font-size: var(--server-error-font);
+    text-align: center;
+    
+}

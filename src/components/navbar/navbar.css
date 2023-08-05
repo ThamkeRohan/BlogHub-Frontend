@@ -1,0 +1,29 @@
+
+.navbar ul{
+    list-style: none;
+}
+.navbar ul div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+    margin-right: 2rem;
+}
+
+.navbar a{
+    color: var(--dark-navy-blue);
+    text-decoration: none;
+}
+
+
+@media (max-width: 1000px){
+    .navbar{
+        align-self: center;
+    }
+    .navbar li{
+        font-size: 1rem;
+    }
+    .navbar ul{
+        gap: 1rem;
+    }
+}

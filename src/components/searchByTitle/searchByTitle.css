@@ -1,0 +1,17 @@
+.search-by-title-container input{
+    padding: 0.3rem;
+    font-size: 1.2rem;
+    border-radius: 3px;
+    width: 15rem;
+
+}
+.search-by-title-container button{
+    font-size: 1.2rem;
+    padding: 0.3rem 0.5rem;
+    border-radius: 3px;
+    margin-left: 0.5rem;
+    background-color: var(--transparent-navy-blue);
+    color: var(--dark-navy-blue);
+    border: 1px solid var(--dark-navy-blue);
+    cursor: pointer;
+}
