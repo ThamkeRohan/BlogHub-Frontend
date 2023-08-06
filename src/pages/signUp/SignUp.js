@@ -94,8 +94,7 @@ export default function SignUp({ removeHeaderImg }) {
             type="text"
             id="first-name"
             value={firstName}
-            onChange={(e) => {
-              setFirstName(e.target.value);
+            onBlur={e =>{
               const isFirstNameValid = validateName(e.target.value, true);
               if (isFirstNameValid) {
                 setFormErrors((prevFormErrors) => {
@@ -111,6 +110,10 @@ export default function SignUp({ removeHeaderImg }) {
                 });
               }
             }}
+            onChange={(e) => {
+              setFirstName(e.target.value);
+              
+            }}
           />
           {formErrors.firstNameError && (
             <div className="error">{formErrors.firstNameError}</div>
@@ -122,8 +125,7 @@ export default function SignUp({ removeHeaderImg }) {
             type="text"
             id="last-name"
             value={lastName}
-            onChange={(e) => {
-              setLastName(e.target.value);
+            onBlur={e => {
               const islastNameValid = validateName(e.target.value);
               if (islastNameValid) {
                 setFormErrors((prevFormErrors) => {
@@ -139,6 +141,10 @@ export default function SignUp({ removeHeaderImg }) {
                 });
               }
             }}
+            onChange={(e) => {
+              setLastName(e.target.value);
+              
+            }}
           />
           {formErrors.lastNameError && (
             <div className="error">{formErrors.lastNameError}</div>
@@ -150,22 +156,24 @@ export default function SignUp({ removeHeaderImg }) {
             type="text"
             id="email"
             value={email}
-            onChange={(e) => {
-              setEmail(e.target.value);
+            onBlur={e => {
               const isEmailValid = validateEmail(e.target.value);
-              if(isEmailValid){
+              if (isEmailValid) {
                 setFormErrors((prevFormErrors) => {
                   return { ...prevFormErrors, emailError: null };
                 });
-              }
-              else{
+              } else {
                 setFormErrors((prevFormErrors) => {
                   return {
                     ...prevFormErrors,
                     emailError: "Email should be in valid foramt.",
                   };
-                }); 
+                });
               }
+            }}
+            onChange={(e) => {
+              setEmail(e.target.value);
+              
             }}
           />
           {formErrors.emailError && (
@@ -178,14 +186,13 @@ export default function SignUp({ removeHeaderImg }) {
             type="password"
             id="password"
             value={password}
-            onChange={(e) => {
-              setPassword(e.target.value);
+            onBlur={e => {
               const isPasswordValid = validatePassword(e.target.value);
-              if(isPasswordValid){
+              if (isPasswordValid) {
                 setFormErrors((prevFormErrors) => {
                   return { ...prevFormErrors, passwordError: "" };
                 });
-              }else{
+              } else {
                 setFormErrors((prevFormErrors) => {
                   return {
                     ...prevFormErrors,
@@ -194,6 +201,10 @@ export default function SignUp({ removeHeaderImg }) {
                   };
                 });
               }
+            }}
+            onChange={(e) => {
+              setPassword(e.target.value);
+              
             }}
           />
           {formErrors.passwordError && (

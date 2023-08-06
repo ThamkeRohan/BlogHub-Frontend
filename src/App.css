@@ -47,10 +47,13 @@
     --show-page-html-font: 1.2rem;
     --show-page-extra-info-font: 1.1rem;
 
+
+
 }
 body{
     font-family: Quicksand;  
     background-color: var(--off-white);
+    padding: 0 1rem;
 }
 .action-btn, .navigation-btn{
     padding: 0.3rem 0.5rem;
@@ -92,7 +95,11 @@ body{
         --show-page-extra-info-font: 1.1rem;
         
     }
+    body{
+        padding: 0 0.5rem;
+    }
     .navigation-btn{
         width: 6rem;
     }
+
 }

@@ -65,8 +65,7 @@ export default function Login({ removeHeaderImg }) {
             type="text"
             id="email"
             value={email}
-            onChange={(e) => {
-              setEmail(e.target.value);
+            onBlur={e => {
               const isEmailValid = validateEmail(e.target.value);
               if (isEmailValid) {
                 setFormErrors((prevFormErrors) => {
@@ -81,6 +80,9 @@ export default function Login({ removeHeaderImg }) {
                 });
               }
             }}
+            onChange={(e) => {
+              setEmail(e.target.value); 
+            }}
           />
           {formErrors.emailError && (
             <div className="error">{formErrors.emailError}</div>
@@ -92,8 +94,7 @@ export default function Login({ removeHeaderImg }) {
             type="password"
             id="password"
             value={password}
-            onChange={(e) => {
-              setPassword(e.target.value);
+            onBlur={e => {
               const isPasswordValid = validatePassword(e.target.value);
               if (isPasswordValid) {
                 setFormErrors((prevFormErrors) => {
@@ -108,6 +109,10 @@ export default function Login({ removeHeaderImg }) {
                   };
                 });
               }
+            }}
+            onChange={(e) => {
+              setPassword(e.target.value);
+              
             }}
           />
           {formErrors.passwordError && (

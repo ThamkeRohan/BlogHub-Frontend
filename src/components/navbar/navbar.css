@@ -1,13 +1,14 @@
 
 .navbar ul{
     list-style: none;
+    
 }
 .navbar ul div{
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 2rem;
-    margin-right: 2rem;
+    
 }
 
 .navbar a{
@@ -23,7 +24,7 @@
     .navbar li{
         font-size: 1rem;
     }
-    .navbar ul{
+    .navbar ul div{
         gap: 1rem;
     }
 }

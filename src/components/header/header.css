@@ -48,6 +48,9 @@
     .app-header .profile-container{
         width: 100%;
     }
+    .app-header .img-container{
+        height: 300px;
+    }
 }
 
 

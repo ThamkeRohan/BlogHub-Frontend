@@ -1,7 +1,7 @@
 .sign-up-container{
     max-width: 850px;
     min-width: 300px;
-    margin: 0 auto 5rem auto;
+    margin: 0 auto;
     border-radius: 5px;
     background-image: linear-gradient(to bottom,var(--pure-violet), var(--light-blue));
 
