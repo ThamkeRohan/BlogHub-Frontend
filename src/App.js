@@ -4,12 +4,12 @@ import New from './pages/new/New';
 import Edit from './pages/edit/Edit';
 import Show from './pages/show/Show';
 import Profile from './pages/profile/Profile';
-import './app.css'
 import blogsFromFile from './data/data';
 import { useEffect, useState } from 'react';
 import Header from './components/header/Header';
 import Login from './pages/login/Login';
 import SignUp from './pages/signUp/SignUp';
+import "./App.css";
 
 function App() {
   const [blogs,setBlogs] = useState([])

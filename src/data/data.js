@@ -11,7 +11,7 @@ const blogs = [
     authorId: 1,
     author: { name: "Rohan Thamke" },
     date: "2023-08-01",
-    tags: ["JavaScript", "Programming", "Web Development"],
+    tags: ["JavaScript", "Programming"],
   },
   {
     id: 2,
